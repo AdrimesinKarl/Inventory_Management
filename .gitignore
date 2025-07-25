@@ -1,0 +1,49 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore XAMPP and OS-level configs
+xampp/
+*.log
+
+# Ignore vendor (if using Composer)
+vendor/
+
+# Ignore environment and config files (sensitive!)
+.env
+*.env
+.env.*
+
+# Ignore node_modules if you're using npm/yarn for frontend
+node_modules/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore cache/temp/uploads/logs
+*.cache
+*.bak
+*.tmp
+*.swp
+*.sql
+*.sqlite
+*.db
+*.log
+uploads/
+logs/
+
+# Ignore compiled files
+*.class
+*.o
+*.so
+
+# Ignore Git files if nested accidentally
+*.orig
+
+# Ignore composer lock (optional)
+composer.lock
+
