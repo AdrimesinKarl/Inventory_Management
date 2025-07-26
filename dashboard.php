@@ -1,6 +1,6 @@
 <?php
     session_start(); // Start the session to access session variables
-    echo "<h1>Welcome to the Dashboard!</h1>";
+    echo "<h1>I miss you!</h1>";
 
 ?>
 
