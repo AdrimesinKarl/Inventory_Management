@@ -1,14 +1,14 @@
 <?php
-session_start();
+
 require_once 'db.php';
 ?>
 
 <table class="table">
 <thead>
     <tr>
-        <th scope="col">product_name</th>
-        <th scope="col">quantity</th>
-        <th scope="col">status</th>
+        <th scope="col">Product_name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Status</th>
         <th scope="col">Actions</th>
     </tr>
 </thead>
@@ -21,11 +21,12 @@ while ($row = $stmt->fetch()) {
             <td>{$row['quantity']}</td>
             <td>{$row['status']}</td>
             <td>
-                <a href='edit.php?id={$row['id']}'>Edit</a>
-                <a href='delete.php?id={$row['id']}'>Delete</a>
+                <a href='edit_product.php?id={$row['id']}'>Edit</a>
+                <a href='delete_product.php?id={$row['id']}'>Delete</a>
             </td>
         </tr>";
 }
 ?>
 </tbody>
 </table>
+

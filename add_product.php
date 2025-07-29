@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if (!empty($name) && $quantity > 0 && !empty($status)) {
         if (add_product($conn, $name, $quantity, $status)) {
-            header("Location: product_table.php");
+            header("Location: dashboard.php");
             exit;
         } else {
             $error = "Failed to add product.";

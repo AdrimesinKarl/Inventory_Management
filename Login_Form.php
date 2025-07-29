@@ -51,9 +51,9 @@
 
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
-            <input 
+            <input
                 type="password"
-                class="form-control <?= !empty($passwordErr) ? 'is-invalid' : ''; ?>" 
+                class="form-control <?= !empty($passwordErr) ? 'is-invalid' : ''; ?>"
                 id="password"
                 name="password"
                 required

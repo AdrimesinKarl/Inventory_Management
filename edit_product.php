@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<form method="POST" action="edit.php">
+<form method="POST" action="edit_product.php">
     <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>">
     <h2>Edit Product</h2>
 
