@@ -31,16 +31,16 @@
 
 <div class="login-container">
     <h3 class="text-center mb-4">Login</h3>
-    <form method="POST" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]); ?>" autocomplete="off">
+    <form action="<?= htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" autocomplete="off">
         <!-- Username Field -->
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>
-            <input 
+            <input
                 type="text"
-                class="form-control <?= !empty($usernameErr) ? 'is-invalid' : ''; ?>" 
+                class="form-control <?= !empty($usernameErr) ? 'is-invalid' : ''; ?>"
                 id="username"
                 name="username"
-                value="<?= htmlspecialchars($username ?? '') ?>" 
+                value="<?= htmlspecialchars($username ?? '') ?>"
                 required
             >
             <div class="invalid-feedback">

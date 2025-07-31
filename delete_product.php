@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
         $stmt->bindParam(':id', $id);
         $stmt->execute();
 
-        echo "Record deleted successfully.";
+        echo "<h1>Record deleted successfully.<h1>";
         
     } catch(PDOException $e) {
         echo "Error: " . $e->getMessage();

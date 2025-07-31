@@ -13,4 +13,3 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 echo "Connection failed: " . $e->getMessage();
 }
 ?>
-
