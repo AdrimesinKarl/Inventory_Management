@@ -39,8 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         
         // Verify password
         if ($user && password_verify($password, $user['password'])) {
+
             //  Set session
-            
             $_SESSION["username"] = $user['username'];
 
             // Set cookie if "Remember Me" checked
